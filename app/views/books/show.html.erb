@@ -57,6 +57,8 @@
          </div>
 
 
+         <%= render 'layouts/errors', obj: @book_comment %>
+
          <div class="new-comment">
          <%= form_with(model:[@book, @book_comment], local: true) do |f| %>
           <%= f.text_area :comment, rows:'5',placeholder: "コメントをここに" %>
